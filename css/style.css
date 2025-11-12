@@ -816,3 +816,64 @@ footer li {
 footer p {
     margin: 0.6rem 0;
 }
+/* ----- POLÍTICAS DE ÉTICA EMPRESARIAL ----- */
+.politicas-etica {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fdfcf9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+.politicas-etica h2 {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.politicas-etica p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.politicas-etica img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.politicas-etica img.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.politicas-etica img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Adaptación móvil */
+@media (max-width: 600px) {
+    .politicas-etica {
+        padding: 1.5rem;
+    }
+
+    .politicas-etica h2 {
+        font-size: 1.6rem;
+    }
+
+    .politicas-etica p {
+        font-size: 1rem;
+    }
+}
+
